@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Imposta arquivo de script -->
+    <script src="js/script.js" type="text/javascript" defer></script>
+    <!-- Imposta arquivo de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Imposta folha de estilo -->
+    <link rel="Stylesheet" href="css/style.css">
+    <title>Calculadora de fórmulas matemáticas</title>
+</head>
+<body>
+    <div class="container1">
+        <div class="row">
+            <div class="col">
+                <h2>Calculadora de Equação do Segundo Grau</h2>
+                <div class="corpo">
+                    <input type="number" id="A1" placeholder="valor a">
+                    <input type="number" id="B1" placeholder="valor b">
+                    <input type="number" id="C1" placeholder="valor c">
+                    <button type="button" class="btn btn-secondary rounded-pill" onclick="segundograu()">Calcular</button>
+                    <p id="segundograu"></p>
+                </div>
+               
+            </div>
+        </div>
+        <div class="col">
+            <h2>Calculadora de Hipotenusa</h2>
+            <div class="corpo">
+                <input type="number" id="catetoOposto" placeholder="valor do cateto oposto">
+            <input type="number" id="catetoAdjacente" placeholder="valor do cateto adjacente">
+
+            <button type="button" class="btn btn-secondary rounded-pill" onclick="calcular()">Calcular</button>
+
+            <p class="result" id="resultado"></p>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

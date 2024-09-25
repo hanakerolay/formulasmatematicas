@@ -1,0 +1,23 @@
+.container1{
+    background-color: rgb(203, 200, 202);
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+}
+
+.corpo{
+    background-color: rgb(250, 226, 246);
+}
+
+input[type="number"] {
+    width: 50%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ee07c7;
+    border-radius: 10px;
+}
+
+button{
+    width: 50%;
+    padding: 8px;
+    margin-top: 5px;
+}
