@@ -8,6 +8,11 @@
     background-color: rgb(250, 226, 246);
 }
 
+.corpohipot{
+    background-color: rgb(250, 226, 246);
+    padding: 15px;
+}
+
 input[type="number"] {
     width: 50%;
     padding: 8px;
@@ -18,6 +23,5 @@ input[type="number"] {
 
 button{
     width: 50%;
-    padding: 8px;
-    margin-top: 5px;
+    margin-top: 15px;
 }
