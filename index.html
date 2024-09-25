@@ -17,27 +17,56 @@
             <div class="col">
                 <h2>Calculadora de Equação do Segundo Grau</h2>
                 <div class="corpo">
-                    <input type="number" id="A1" placeholder="valor a">
-                    <input type="number" id="B1" placeholder="valor b">
-                    <input type="number" id="C1" placeholder="valor c">
+                    <input type="number" id="A1" placeholder="Digite valor de A">
+                    <input type="number" id="B1" placeholder="Digite valor de B">
+                    <input type="number" id="C1" placeholder="Digite valor de C">
                     <button type="button" class="btn btn-secondary rounded-pill" onclick="segundograu()">Calcular</button>
                     <p id="segundograu"></p>
                 </div>
                
             </div>
-        </div>
-        <div class="col">
-            <h2>Calculadora de Hipotenusa</h2>
-            <div class="corpo">
-                <input type="number" id="catetoOposto" placeholder="valor do cateto oposto">
-            <input type="number" id="catetoAdjacente" placeholder="valor do cateto adjacente">
-
-            <button type="button" class="btn btn-secondary rounded-pill" onclick="calcular()">Calcular</button>
-
-            <p class="result" id="resultado"></p>
+            <div class="col">
+                <h2>Calculadora de Hipotenusa</h2>
+                <div class="corpo">
+                    <input type="number" id="catetoOpos" placeholder="Digite valor do cateto oposto">
+                    <input type="number" id="catetoAdjacen" placeholder="Digite valor do cateto adjacente">
+    
+                    <button type="button" class="btn btn-secondary rounded-pill" onclick="calcularHipotenusa()">Calcular</button>
+    
+                    <p class="result" id="resultado"></p>
+                </div>
             </div>
-            
         </div>
     </div>
+
+    <div class="container1">
+        <div class="row">
+            <div class="col">
+                <div class="corpo">
+
+                    <h1>Calculadora de Relações Trigonométricas</h1>
+    
+                    <input type="number" id="catetoOposto" placeholder="Digite o valor do cateto oposto">
+                    
+                    <input type="number" id="catetoAdjacente" placeholder="Digite o valor do cateto adjacente">
+
+                    <input type="number" id="hipotenusa" placeholder="Digite o valor da hipotenusa">
+
+                    <button type="button" class="btn btn-secondary rounded-pill" onclick="calcularRelacTrigonomet()">Calcular</button>
+                    
+                    <p id="resultadoSeno"></p>
+                    <p id="resultadoCosseno"></p>
+                    <p id="resultadoTangente"></p>
+                    
+                    
+                </div>
+               
+            </div>
+        </div>    
+    </div>
+        
+</body>
+</html>
+
 </body>
 </html>

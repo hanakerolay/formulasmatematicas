@@ -13,23 +13,33 @@ function segundograu() {
     }
 }
 
-function calcular() {
-    let catetoOposto = Number(document.getElementById('catetoOposto').value);
-    let catetoAdjacente =Number(document.getElementById('catetoAdjacente').value);
 
-    // Calcular a hipotenusa usando o Teorema de Pitágoras
-    let hipotenusa = Math.sqrt(Math.pow(catetoOposto, 2) + Math.pow(catetoAdjacente, 2));
+function calcularHipotenusa() {
+    // Pegando os valores dos catetos
+    let catetoOpos = Number(document.getElementById("catetoOpos").value);
+    let catetoAdjacen = Number(document.getElementById("catetoAdjacen").value);
 
-    // Calcular seno, cosseno e tangente
+    // Calculando a hipotenusa usando o Teorema de Pitágoras
+    let hipotenusa = Math.sqrt(Math.pow(catetoOpos, 2) + Math.pow(catetoAdjacen, 2));
+
+    // Exibindo o resultado
+    document.getElementById("resultado").innerText = `A hipotenusa é: ${hipotenusa.toFixed(2)}`;
+}
+
+
+function calcularRelacTrigonomet() {
+    // Pegando os valores dos catetos e da hipotenusa
+    let catetoOposto = parseFloat(document.getElementById("catetoOposto").value);
+    let catetoAdjacente = parseFloat(document.getElementById("catetoAdjacente").value);
+    let hipotenusa = parseFloat(document.getElementById("hipotenusa").value);
+
+    // Calculando as relações trigonométricas
     let seno = catetoOposto / hipotenusa;
     let cosseno = catetoAdjacente / hipotenusa;
     let tangente = catetoOposto / catetoAdjacente;
 
-    // resultados
-    document.getElementById('resultado').innerHTML = `
-        <p><strong>Hipotenusa:</strong> ${hipotenusa.toFixed(2)}</p>
-        <p><strong>Seno:</strong> ${seno.toFixed(2)}</p>
-        <p><strong>Cosseno:</strong> ${cosseno.toFixed(2)}</p>
-        <p><strong>Tangente:</strong> ${tangente.toFixed(2)}</p>
-    `;
+    // Exibindo os resultados
+    document.getElementById("resultadoSeno").innerText = `Seno: ${seno.toFixed(4)}`;
+    document.getElementById("resultadoCosseno").innerText = `Cosseno: ${cosseno.toFixed(4)}`;
+    document.getElementById("resultadoTangente").innerText = `Tangente: ${tangente.toFixed(4)}`;
 }
